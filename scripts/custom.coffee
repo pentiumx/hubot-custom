@@ -16,4 +16,4 @@ module.exports = (robot) ->
   # Super simple example: If the robot detects the word "thank you",
   # it just responds it with "you're welcome".
   robot.hear /(.*)thank you(.*)/i, (res) ->
-    robot.messageRoom room, "you're welcome."
+    res.send "you're welcome."
