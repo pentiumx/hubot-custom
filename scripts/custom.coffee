@@ -17,3 +17,7 @@ module.exports = (robot) ->
   # it just responds it with "you're welcome".
   robot.hear /(.*)thank you(.*)/i, (res) ->
     res.send "you're welcome."
+
+  robot.hear /(.*)(impossible|impossiburu)(.*)/i, (res) ->
+    imageMe res,'impossiburu', (url) ->
+      msg.send url
